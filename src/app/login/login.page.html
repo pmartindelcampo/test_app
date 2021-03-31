@@ -13,7 +13,7 @@
 
           <ion-item lines="inset">
             <ion-icon name="person-outline" slot="start"></ion-icon>
-            <ion-input placeholder="Email" type="email" formControlName="email" required></ion-input>
+            <ion-input placeholder="Email" type="email" name="email" formControlName="email" required></ion-input>
           </ion-item>
           <span class="error ion-padding" *ngIf="isSubmitted && controls.email.errors?.required">
             El email es obligatorio.
@@ -24,7 +24,7 @@
 
           <ion-item lines="inset">
             <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
-            <ion-input placeholder="Contraseña" type="password" formControlName="password" required minlength="5"></ion-input>
+            <ion-input placeholder="Contraseña" type="password" name="password" formControlName="password" required minlength="5"></ion-input>
           </ion-item>
           <span class="error ion-padding" *ngIf="isSubmitted && controls.password.errors?.required">
             La contraseña es obligatoria.
