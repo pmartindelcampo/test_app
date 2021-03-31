@@ -1,0 +1,57 @@
+.content {
+    padding: 16px !important;
+    background-image: url("/assets/images/background.jpg");
+    height: 100%;
+
+    .row-avatar {
+        justify-content: center;
+        padding: 20px 0;
+
+        ion-avatar {
+            --border-radius: 0;
+            height: 100px;
+            width: 100px;
+        }
+    }
+
+    .row-form {
+        justify-content: center;
+        padding: 20px 8px;
+    }
+
+    .col-form {
+        background-color: white;
+        padding: 0;
+    }
+
+    ion-icon {
+        color: lightgray;
+    }
+
+    ion-button {
+        margin: 0;
+    }
+
+    .error {
+        color: red;
+    }
+
+    @media only screen and (min-width: 960px) {
+        font-size: 1.2em;
+
+        .row-avatar {
+            padding-left: 0;
+            padding-right: 0;
+
+            ion-avatar {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        .row-form {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
